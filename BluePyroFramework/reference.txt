@@ -1,0 +1,104 @@
+This is meant to be viewed in a notepad or anything
+that is similar in behaviour.
+
+This file is used to search the framework's functionality.
+To find anything specific hit left cnt+f or use some find
+function to search this document.  Everything is organized
+and catagorized and sub catagorized.  If you have any
+suggestions on catagory names or layout feel free to let
+me know.  This file will likely change a LOT.
+
+
+
+Here's the header catagories(and sub catagories) to search
+for.  Copy and paste these names in the find function to
+search easier.
+
+#ABOUT_THIS_FRAMEWORK
+-#STATUS
+#BPFRAMEWORKS
+#GRAPHICS
+#KEYBOARD
+
+
+
+
+
+
+
+#ABOUT_THIS_FRAMEWORK:
+This entire framework is built to make programming games in
+nasm much easier.  It borrows concepts from processing in
+many ways.  It can compile on most WINDOWS/MAC/LINUX
+distros right out of the box.  By using a wonderful library
+called "SDL2".  It's my pride and joy.  And i document this
+as best as i can just in case someone wish's to modify or
+learn from this framework.  As a personal note this is
+likely my last legacy i'll leave behind as i exit the game
+dev community.  Suggestions and contributions are therefore
+very welcome as i want this to be a good last hurah.
+
+The reason i made this was to encourage more programmers to
+learn assembly.  After researching ps1dev i quickly realized
+just how far we have fallen as a community and i hope this
+little seed will grow into a garden that holds respect for
+the old ways.  Or at least the better parts of it.  Lets
+not lose the sacred understanding of computers that holds
+so much power over our lives yet becomes less and less
+understood with each passing year.
+
+-#STATUS:
+    FEATURES:
+    Inits, manages, and properly closes sdl
+    Can fill new shapes/textures
+    Can draw rectangles
+    Able to check key states
+    TODO:
+    Add way to check mouse states
+    Add way to check/tweek framerate
+    Add delay and ways of checking time
+    Add file IO
+    Add textures
+    Add networking
+    Add multithreading
+    POSSIBLE_TODO
+    Add 3D support
+    Add full opengl support
+        naming coventions/implimentation need debating
+    Add mesh's
+    Consider adding support for a modularized game engine
+        if so make each piece replacable
+        no over generalizations...
+        make it more of a kit with a variety of approaches
+    BUGS:
+    Fix framerate to be more accurate
+
+
+
+#BPFRAMEWORKS:
+-BPFramework.asm
+This file is the header of framework and deals with all the
+prep and backend the user "shouldn't" need to worry about.
+Specifically it learns the OS (and the address bit size)
+the program is being compiled to.  E.G. WIN32 or LINUX64.
+It then sets some macros to help the code compile for that
+specific os.
+
+This is the only file one should directly include in their
+project(from this framework).  The file also does a lot of
+behind the scenes prepping which helps make the main file
+look clean and orderly.  Also preps _main/main depending on
+target OS that's being compiled to.
+
+
+
+#GRAPHICS:
+-graphics.asm
+This file is simply a collection of macros which can be used
+to draw graphics to the screen.
+
+
+
+#KEYBOARD:
+-keyboard.asm
+This file is used to impliment ways of checking key states.

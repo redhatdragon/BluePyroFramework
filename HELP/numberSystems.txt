@@ -1,0 +1,26 @@
+bin(binary)
+base 2:		01
+NOTE: mostly used to explain bit related operations on the cpu
+
+oct(octal)
+base 8:		01234567
+
+dec(decimal)
+base 10:	0123456789
+NOTE: the one mose people usually use
+
+hex(hexidecimal)
+base 16:	0123456789abcdef
+NOTE: most common way to read a byte(s)
+
+Examples to reach the number 12:
+bin:	1100
+oct:	14
+dec:	12
+hex:	c
+
+Examples to reach the number 16:
+bin:	1111
+oct:	20
+dec:	16
+hex:	f

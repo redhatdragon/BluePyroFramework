@@ -1,0 +1,68 @@
+//--------------------------------------
+16 BIT CPU
+ax
+bx
+cx
+dx
+
+8 bit reg
+al, ah
+bl, bh
+cl, ch
+dl, dh
+//--------------------------------------
+
+
+
+//--------------------------------------
+32 BIT CPU
+eax
+ebx
+ecx
+edx
+
+16 bit reg
+ax
+bx
+cx
+dx
+
+8 bit reg
+al, ah
+bl, bh
+cl, ch
+dl, dh
+//--------------------------------------
+
+
+
+
+//--------------------------------------
+64 BIT CPU
+rax
+rbx
+rcx
+rdx
+
+32 bit reg
+eax
+ebx
+ecx
+edx
+
+16 bit reg
+ax
+bx
+cx
+dx
+
+8 bit reg
+al, ah
+bl, bh
+cl, ch
+dl, dh
+
+
+EXTRA:
+r8-r15
+//--------------------------------------
